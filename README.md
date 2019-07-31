@@ -14,7 +14,7 @@ Wait, my HDMI cannot fit the port on the rpi4 anymore! Fine... I would just wait
 For the new device, it needs at least 8 GB SD card. Or you can choose to install the operating system without the desktop. 
 
 ## Setup
-- install os
+#### install os
 After preparing all the supply, we can start setup the rpi4. 
 1.  Download the os image from https://www.raspberrypi.org/downloads/ \
   If your SD card's capacity is larger than 8GB, download the Raspbian Buster with desktop and recommended software image.
@@ -35,8 +35,12 @@ After preparing all the supply, we can start setup the rpi4.
     3. Select N2 Wi-fi
     4. Enter SSID (Default Wireless Network name) -> Ok
     5. Enter Passphrase -> Finish
-  
-- transfer files
+#### Fix the volume does not contain recognized file system 
+1. Right click This PC
+2. Click Manage
+3. Click Disk Management
+At the bottom, you will see your disk information. In my case, my disk (D:) is unallocated. Therefore, my computer cannot read from it. To solve it, I right click my target disk and choose to create a new volume. \
+#### transfer files
 
 ## Cmd Line
 ifconfig
